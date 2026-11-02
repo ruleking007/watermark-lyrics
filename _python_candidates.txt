@@ -1,0 +1,28 @@
+# 一行一个候选解释器，按顺序尝试；# 开头的是注释行。
+# 命中条件：该解释器同时装了 PyQt5、requests、winrt 三个库。
+#
+# 换电脑后如果自动找不到，把你自己 python.exe 的完整路径写到第一行即可，例如：
+#   D:\Python312\python.exe
+#   "C:\Program Files\Python311\python.exe"
+#
+# 也可以用环境变量临时指定：set WATERMARK_PYTHON=D:\Python312\python.exe
+py -3.13
+py -3.12
+py -3.11
+py -3.10
+py -3
+python
+%LOCALAPPDATA%\Programs\Python\Python313\python.exe
+%LOCALAPPDATA%\Programs\Python\Python312\python.exe
+%LOCALAPPDATA%\Programs\Python\Python311\python.exe
+%LOCALAPPDATA%\Programs\Python\Python310\python.exe
+%USERPROFILE%\anaconda3\python.exe
+%USERPROFILE%\miniconda3\python.exe
+%ProgramFiles%\Python313\python.exe
+%ProgramFiles%\Python312\python.exe
+%ProgramFiles%\Python311\python.exe
+C:\Python313\python.exe
+C:\Python312\python.exe
+C:\Python311\python.exe
+# 下面这台是当前电脑自带的便携环境，别的电脑上没有会自动跳过
+C:\Users\21094\.workbuddy\binaries\python\envs\default\Scripts\python.exe
